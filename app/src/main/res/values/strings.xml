@@ -57,5 +57,14 @@
     <string name="tv_edit_booking">Booking Update and Delete Menu</string>
     <string name="tv_edit_booking_start_time_title">Meeting Start Time</string>
     <string name="tv_edit_booking_end_time_title">Meeting End Time</string>
+    <string name="lv_tv_booking_id_title">Booking ID</string>
+    <string name="lv_tv_booking_username_title">Username</string>
+    <string name="lv_tv_booking_room_title">Meeting Room</string>
+    <string name="lv_tv_booking_date_title">Meeting Date</string>
+    <string name="lv_tv_booking_start_time_title">Start Time</string>
+    <string name="lv_tv_booking_end_time_title">End Time</string>
+    <string name="tv_create_booking_start_time_title">Start Time</string>
+    <string name="tv_create_booking_end_time_title">End Time</string>
+    <string name="tv_create_booking">Create Booking Menu</string>
 
 </resources>

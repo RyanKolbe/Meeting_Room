@@ -9,11 +9,11 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.ryankolbe.meetingroom.BookingActivities.BookingActivity;
 import com.ryankolbe.meetingroom.CustomAdapters.RoomCustomAdapter;
 import com.ryankolbe.meetingroom.Database.DatabaseClient;
 import com.ryankolbe.meetingroom.Model.Room;
 import com.ryankolbe.meetingroom.R;
-import com.ryankolbe.meetingroom.UserActivities.BookingActivity;
 import com.ryankolbe.meetingroom.UserActivities.UserActivity;
 
 import java.util.ArrayList;
@@ -77,7 +77,6 @@ public class RoomActivity extends AppCompatActivity {
                 });
             }
         }).start();
-
     }
 
     public void navigation() {

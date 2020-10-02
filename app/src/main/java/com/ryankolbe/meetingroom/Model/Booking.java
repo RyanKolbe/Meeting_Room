@@ -3,13 +3,12 @@ package com.ryankolbe.meetingroom.Model;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
-import androidx.room.TypeConverter;
 
 import java.sql.Date;
 import java.sql.Time;
 
 
-@Entity(primaryKeys = {"room_id", "user_id"})
+@Entity(primaryKeys = {"room_id", "user_id"}, tableName = "bookings")
 public class Booking {
 
     @ColumnInfo(name = "room_id")
@@ -89,17 +88,5 @@ public class Booking {
 
     public void setComment(String comment) {
         this.comment = comment;
-    }
-
-    @Override
-    public String toString() {
-        return "Booking{" +
-                "roomID=" + roomID +
-                ", userID=" + userID +
-                ", meetingDate=" + meetingDate +
-                ", startTime=" + startTime +
-                ", endTime=" + endTime +
-                ", comment='" + comment + '\'' +
-                '}';
     }
 }

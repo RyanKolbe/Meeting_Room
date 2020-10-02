@@ -1,8 +1,8 @@
-package com.ryankolbe.meetingroom.RoomActivities;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.ryankolbe.meetingroom.BookingActivities;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ryankolbe.meetingroom.R;
 

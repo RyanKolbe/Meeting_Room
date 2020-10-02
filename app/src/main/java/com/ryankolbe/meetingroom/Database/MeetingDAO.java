@@ -61,9 +61,9 @@ public interface MeetingDAO {
     @Delete
     void deleteBooking(Booking Booking);
 
-    @Query("SELECT * FROM booking")
+    @Query("SELECT * FROM bookings")
     List<Booking> getAllBookings();
 
-    @Query("SELECT * FROM Booking WHERE user_id = :userID AND room_id = :roomID")
-    User searchBooking(Long userID, Long roomID);
+    @Query("SELECT * FROM bookings WHERE user_id = :userID AND room_id = :roomID")
+    Booking searchBooking(Long userID, Long roomID);
 }

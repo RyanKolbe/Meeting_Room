@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoomActivities.EditBookingActivity"></activity>
+        <activity android:name=".BookingActivities.CreateBookingActivity"></activity>
+        <activity android:name=".BookingActivities.EditBookingActivity" />
         <activity android:name=".RoomActivities.CreateRoomActivity" />
         <activity android:name=".RoomActivities.EditRoomActivity" />
         <activity android:name=".UserActivities.EditUserActivity" />
-        <activity android:name=".UserActivities.BookingActivity" />
+        <activity android:name=".BookingActivities.BookingActivity" />
         <activity android:name=".RoomActivities.RoomActivity" />
         <activity android:name=".UserActivities.RegisterActivity" />
         <activity android:name=".UserActivities.UserActivity" />
