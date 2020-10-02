@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#F17A5C"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".BookingActivities.CreateBookingActivity">
+
+    <TextView
+        android:id="@+id/tv_create_booking"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/tv_create_booking"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/cb_credit_booking_user_id"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_create_booking"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/cb_create_booking_room_id"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_create_booking"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/cb_credit_booking_user_id"
+        android:background="@android:color/white" />
+
+    <CalendarView
+        android:id="@+id/cv_create_booking_meeting_date"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/cb_create_booking_room_id"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_create_booking_start_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_create_booking_meeting_date"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:text="@string/tv_create_booking_start_time_title" />
+
+    <TimePicker
+        android:id="@+id/tp_create_booking_start_time"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_create_booking_start_time_title"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tv_create_booking_end_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_create_booking_meeting_date"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:text="@string/tv_create_booking_end_time_title" />
+
+    <TimePicker
+        android:id="@+id/tp_create_booking_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_create_booking_start_time_title"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tp_create_booking_end_time"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_create_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_create_booking"
+            android:textAllCaps="false"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+</RelativeLayout>
